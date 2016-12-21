@@ -1824,9 +1824,9 @@ input[type="button"],
   height: 100%;
   overflow-y: auto;
   position: fixed;
-  right: -300px;
+  right: -500px;
   top: 0;
-  width: 300px; }
+  width: 500px; }
 
 #gnav {
   z-index: 10001;
@@ -1918,10 +1918,10 @@ input[type="button"],
   right: 0; }
 
 body.header-visible #gnav {
-  -moz-transform: translateX(-300px);
-  -webkit-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  transform: translateX(-300px); }
+  -moz-transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  transform: translateX(-500px); }
 
 /* Footer */
 #footer .copyright {
@@ -1950,6 +1950,7 @@ body.header-visible #gnav {
   left: 0; }
 
 #main {
+  z-index: 10010;
   margin-left: 35%;
   width: calc(100% - 35%);
   background: #000; }

@@ -31,9 +31,9 @@
     height: 100%;
     overflow-y: auto;
     position: fixed;
-    right:-300px;
+    right:-500px;
     top:0;
-    width:300px;
+    width:500px;
   }
 
 
@@ -147,10 +147,10 @@
 
 
 			body.header-visible #gnav{
-				-moz-transform: translateX(-300px);
-				-webkit-transform: translateX(-300px);
-				-ms-transform: translateX(-300px);
-				transform: translateX(-300px);
+				-moz-transform: translateX(-500px);
+				-webkit-transform: translateX(-500px);
+				-ms-transform: translateX(-500px);
+				transform: translateX(-500px);
 			}
 
 			// body.header-visible #titleBar {

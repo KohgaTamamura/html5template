@@ -4,9 +4,14 @@
 	position: absolute;
 	top:0;
 	left:0;
+
+
+
+
 }
 
 	#main {
+		z-index: 10010;
 		margin-left: $size-header-width;
 		// max-width: 50em + $size-header-pad;
 		// max-width: 900px;

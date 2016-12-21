@@ -1,0 +1,51 @@
+/* Main */
+
+	#main {
+		margin-left: $size-header-width;
+		// max-width: 50em + $size-header-pad;
+		// max-width: 900px;
+		width: calc(100% - #{$size-header-width});
+	
+		.mainWrapper{
+			width:100%;
+      padding: $margin $margin*2;
+		}
+
+		> section {
+			border-top: solid 2px _palette(border);
+			margin: $size-header-pad 0 0 0;
+			padding: $size-header-pad 0 0 0;
+
+			&:first-child {
+				border-top: 0;
+				margin-top: 0;
+				padding-top: 0;
+			}
+		}
+
+	background:#000;
+
+	@include breakpoint(xlarge) {
+			background:#FF0;
+	}
+
+
+	@include breakpoint(large) {
+			background:#F00;
+	}
+
+		@include breakpoint(medium) {
+			background:#F0F;
+	}
+
+		@include breakpoint(small) {
+			background:#0FF;
+	}
+
+
+		@include breakpoint(xsmall) {
+			background:#00F;
+	}
+
+
+	}

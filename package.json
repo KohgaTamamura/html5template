@@ -1,0 +1,21 @@
+{
+  "name": "cotton",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.3.0",
+    "gulp-fs": "0.0.2",
+    "gulp-load": "^0.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

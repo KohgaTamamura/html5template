@@ -1,0 +1,53 @@
+/* Large */
+
+  @include breakpoint(large) {
+
+    // $size-header-width: 30%;
+    // $size-header-pad: 3em;
+
+
+
+    /* Header */
+
+      #header {
+        padding: $size-header-pad $size-header-pad/2;
+        width: $size-header-width;
+
+        // h1 {
+        //   font-size: 1.25em;
+
+        //   br {
+        //     display: none;
+        //   }
+        // }
+      }
+
+    /* Main */
+
+      #main {
+        margin-left: $size-header-width;
+        // max-width: none;
+        // padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+        width: calc(100% - #{$size-header-width});
+
+      }
+
+
+
+    /* Footer */
+
+      #footer {
+        .copyright {
+          li {
+            border-left-width: 0;
+            display: block;
+            line-height: 2.25em;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+      }
+
+
+
+  }

@@ -15,7 +15,6 @@
 
 	$size-header-width: 35%;
 	$size-header-pad: 4em;
-	$margin: 30px;
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1800px)',
@@ -28,18 +27,18 @@
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
-		grid: ( gutters: $margin ),
+		grid: ( gutters: _size(layout-margin) ),
 		conditionals: true,
 		containers: true,
 		breakpoints: (
 			large: (
 				grid: (
-					gutters: $margin
+					gutters: _size(layout-margin)
 				),
 			),
 			small: (
 				grid: (
-					gutters: $margin/2
+					gutters: _size(layout-margin)/2
 				),
 			)
 		)
@@ -113,6 +112,7 @@
 @import 'components/button';
 
 @import 'layout/header';
+@import 'layout/navigation';
 @import 'layout/footer';
 @import 'layout/main';
 @import 'layout/poptrox';

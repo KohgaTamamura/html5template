@@ -74,6 +74,41 @@
 
 		// Header.
 
+
+		//navigation add
+
+		// Off-Canvas Navigation.
+
+			// Title Bar.
+				$(
+					'<div id="titleBar">' +
+						'<a href="#gnav" class="toggle"></a>' +
+					'</div>'
+				)
+					.appendTo($body);
+
+			// Header.
+				$('#gnav')
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'right',
+						target: $body,
+						visibleClass: 'header-visible'
+					});
+
+			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
+				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
+					$('#titleBar, #gnav, #wrapper')
+						.css('transition', 'none');
+
+		//navigation add end
+
+
+
 			// Parallax background.
 
 				// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).

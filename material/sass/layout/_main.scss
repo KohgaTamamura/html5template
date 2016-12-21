@@ -1,5 +1,11 @@
 /* Main */
 
+#wrapper{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
 	#main {
 		margin-left: $size-header-width;
 		// max-width: 50em + $size-header-pad;
@@ -8,7 +14,7 @@
 	
 		.mainWrapper{
 			width:100%;
-      padding: $margin $margin*2;
+      padding: _size(layout-margin) _size(layout-margin)*2;
 		}
 
 		> section {
